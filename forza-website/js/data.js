@@ -12,7 +12,7 @@ export const scholarships = [
     eligibility: "International students 15–17 years old with good academics, leadership, English.",
     applicationStatus: "Open (varies by country)",
     deadline: "Varies by country",
-    image: "https://placehold.co/900x520/png?text=Scholarship+Image",
+    image: "https://source.unsplash.com/900x520/?university,students",
     badgeColor: "pink"
   },
   {
@@ -28,7 +28,7 @@ export const scholarships = [
     eligibility: "Open to international students from all countries.",
     applicationStatus: "Open Now",
     deadline: "Rolling / Program dependent",
-    image: "https://placehold.co/900x520/png?text=Germany+Scholarship",
+    image: "https://source.unsplash.com/900x520/?berlin,architecture",
     badgeColor: "green"
   },
   {
@@ -44,7 +44,7 @@ export const scholarships = [
     eligibility: "International students with strong academics and language proficiency (English or German).",
     applicationStatus: "Open Now",
     deadline: "Program dependent",
-    image: "https://placehold.co/900x520/png?text=DAAD+Scholarship",
+    image: "https://source.unsplash.com/900x520/?germany,building",
     badgeColor: "green"
   },
   // extra items for pagination demo
@@ -104,7 +104,7 @@ export const programmes = [
     title: "Lumiere Research",
     tag: "Program",
     description: "An international research program that enables high school students to conduct independent research with mentorship from PhD scholars.",
-    image: "https://placehold.co/900x420/png?text=Lumiere+Program",
+    image: "https://source.unsplash.com/900x420/?research,lab",
     badgeColor: "purple"
   },
   {
@@ -112,7 +112,7 @@ export const programmes = [
     title: "Pioneer Academics",
     tag: "Program",
     description: "International program allowing high school students to conduct university-level research with professors, building strong research skills for college.",
-    image: "https://placehold.co/900x420/png?text=Pioneer+Program",
+    image: "https://source.unsplash.com/900x420/?university,students",
     badgeColor: "purple"
   },
   {
@@ -120,7 +120,7 @@ export const programmes = [
     title: "SSP – Summer Science Program",
     tag: "Program",
     description: "An intensive summer research program for hands-on scientific research, problem-solving, teamwork, and advanced STEM skills.",
-    image: "https://placehold.co/900x420/png?text=SSP+Program",
+    image: "https://source.unsplash.com/900x420/?science,lab",
     badgeColor: "purple"
   },
   // extra for pagination demo
