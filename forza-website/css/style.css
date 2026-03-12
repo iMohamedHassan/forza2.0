@@ -18,7 +18,8 @@ body{
 
 /* Full width hero */
 .hero{
-  background: var(--hero-bg);
+  /* gradient from white to light blue like screenshot */
+  background: linear-gradient(90deg, #ffffff 0%, #dff0f8 100%);
   padding-bottom: 28px;
 }
 
@@ -122,11 +123,16 @@ body{
   height: 48px;
   padding: 0 28px;
   border-radius: 999px;
-  background: var(--primary);
+  background: linear-gradient(90deg, #3fc5fb 0%, #4ad4ff 100%);
   color: white;
   font-weight: 800;
   text-decoration:none;
   box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.cta:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(15,23,42,.15);
 }
 
 /* RIGHT */
