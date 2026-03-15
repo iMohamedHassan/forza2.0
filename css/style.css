@@ -39,21 +39,14 @@ body{
 }
 
 .brand-logo{
-  font-weight: 900;
-  letter-spacing: .5px;
-  font-size: 22px;
-  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
 }
-.brand-logo::before{
-  content: '';
-  position: absolute;
-  top: -8px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-bottom: 6px solid #111827;
+.brand-logo img{
+  display: block;
+  width: auto;
 }
 
 .nav-links{
@@ -106,6 +99,14 @@ body{
   font-weight: 800;
   box-shadow: var(--shadow-soft);
   cursor:pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.lang-btn img{
+  width: 18px;
+  height: 18px;
+  color: #fff;
 }
 
 /* HERO GRID */
@@ -155,6 +156,8 @@ body{
 .hero-right{
   position: relative;
   min-height: 330px;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-metrics{
@@ -234,6 +237,14 @@ body{
   color:#0f172a;
   font-weight: 900;
   cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.help-fab img{
+  width: 18px;
+  height: 18px;
+  color: #0f172a;
 }
 
 /* Responsive */
@@ -278,8 +289,11 @@ body{
   justify-content:center;
   border-radius: 999px;
   background: rgba(70,189,246,.18);
-  color:#1d4ed8;
-  font-size: 12px;
+}
+.pill-dot .iconify{
+  width: 20px;
+  height: 20px;
+  color: #23B0F7;
 }
 
 /* Section intro under features pill (in hero) */
@@ -299,24 +313,37 @@ body{
   padding-bottom: 16px;
 }
 .feature-card{
-  background:#fff;
-  border: 1px solid rgba(15,23,42,.08);
-  border-radius: 18px;
-  padding: 18px 16px;
-  box-shadow: 0 12px 26px rgba(15,23,42,.08);
-  min-height: 150px;
+  background: #fff;
+    border: 1px solid rgba(15, 23, 42, .08);
+    border-radius: 18px;
+    padding: 18px 16px;
+    box-shadow: 0 12px 26px rgba(15, 23, 42, .08);
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .feature-ic{
   width: 42px;
   height: 42px;
-  border-radius: 12px;
-  background: rgba(70,189,246,.18);
+  border-radius: 14px;
   display:flex;
   align-items:center;
   justify-content:center;
-  font-weight: 900;
   margin-bottom: 12px;
 }
+.feature-ic .iconify{
+  width: 20px;
+  height: 20px;
+}
+
+.feature-ic--blue{ background: #D6F6FF; color: #0C6EBD; }
+.feature-ic--indigo{ background: #E7E4FF; color: #4338CA; }
+.feature-ic--teal{ background: #D7FFF6; color: #0D9488; }
+.feature-ic--purple{ background: #F0E6FF; color: #7C3AED; }
+
 .feature-card h3{
   margin: 0 0 8px;
   font-size: 14px;
@@ -524,16 +551,16 @@ body{
 }
 .person-photo{
   background: #7dd3fc;
-  border-radius: 18px 18px 0 0;
-  padding: 18px;
-  height: 280px;
-  display:flex;
-  align-items:flex-end;
-  justify-content:center;
+    border-radius: 18px 18px 0 0;
+    padding: 18px;
+    padding-bottom: 0;
+    height: 280px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 .person-photo img{
-  width: 70%;
-  height: auto;
+  height: 120%;
   display:block;
 }
 .person-info{
@@ -616,4 +643,74 @@ body{
   .success-grid{ grid-template-columns: 1fr; }
   .wide-card{ grid-template-columns: 1fr; }
   .wide-media{ height: 210px; }
+}
+
+/* Adjustments for 1:1 design matching */
+
+/* Adjusting the hero section */
+.hero {
+  padding-top: 40px; /* Adjusted padding for better alignment */
+}
+
+.hero-left h1 {
+  font-size: 56px; /* Increased font size for better match */
+}
+
+.hero-sub {
+  font-size: 16px; /* Adjusted font size */
+  line-height: 1.6; /* Adjusted line height */
+}
+
+.cta {
+  font-size: 16px; /* Adjusted font size */
+  padding: 0 32px; /* Adjusted padding */
+}
+
+/* Adjusting feature cards */
+.feature-card {
+  padding: 20px 18px; /* Adjusted padding */
+  min-height: 180px; /* Adjusted height */
+}
+
+.feature-card h3 {
+  font-size: 16px; /* Adjusted font size */
+}
+
+.feature-card p {
+  font-size: 14px; /* Adjusted font size */
+}
+
+/* Adjusting wide cards */
+.wide-card {
+  grid-template-columns: 1fr 1.6fr; /* Adjusted column ratio */
+}
+
+.wide-media {
+  height: 300px; /* Adjusted height */
+}
+
+.wide-desc {
+  font-size: 14px; /* Adjusted font size */
+}
+
+/* Adjusting programme cards */
+.program-card {
+  min-height: 220px; /* Adjusted height */
+}
+
+.program-body h4 {
+  font-size: 16px; /* Adjusted font size */
+}
+
+.program-body p {
+  font-size: 14px; /* Adjusted font size */
+}
+
+/* Adjusting footer */
+.footer {
+  padding: 30px clamp(24px, 5vw, 64px); /* Adjusted padding */
+}
+
+.footer-links a {
+  font-size: 14px; /* Adjusted font size */
 }
