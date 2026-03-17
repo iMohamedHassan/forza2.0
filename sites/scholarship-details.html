@@ -1,127 +1,109 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Forza — Scholarship Details</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FORZA — Scholarship Details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/responsive.css" />
-  <style>body{font-family: Inter, var(--font);}</style>
+  <script
+    src="https://code.iconify.design/2/2.2.1/iconify.min.js"
+    defer
+  ></script>
 </head>
-<body>
-  <header class="topbar">
-    <div class="container">
-      <div class="nav">
-        <a class="brand" href="../index.html" aria-label="Forza Home">
-          <span class="logo-mark" aria-hidden="true"></span>
-          <span>FORZA</span>
+<header class="nav">
+  <div class="brand">
+    <a class="brand-logo" href="../index.html" aria-label="FORZA home">
+      <img src="../assets/logo.svg" alt="FORZA" />
+    </a>
+  </div>
+  <nav class="nav-links">
+    <a href="../index.html">Home</a>
+    <a href="./scholarships.html">Scholarships</a>
+    <a href="../index.html#features">Features</a>
+    <a href="./programmes.html">Programmes</a>
+    <a href="../index.html#about">About forza</a>
+    <a href="../index.html#contact">Contact</a>
+    <a href="./volunteering.html">Volunteering</a>
+  </nav>
+</header>
+<main class="section">
+  <div class="container">
+    <div class="article-hero">
+      <img id="detailHeroImg" src="https://placehold.co/1200x520/png?text=Header+Image" alt="Scholarship hero">
+    </div>
+
+    <article class="article" id="scholarshipDetails">
+      <h1 id="detailTitle">Scholarship: A Complete Guide</h1>
+
+      <h2>Introduction</h2>
+      <p id="detailIntro">Discover scholarships that can help you achieve your academic dreams. Learn about eligibility, funding, and how to apply.</p>
+
+      <h2>Key Info</h2>
+      <div class="two-col">
+        <div>
+          <ul>
+            <li><b>Country:</b> <span id="detailCountry">United States</span></li>
+            <li><b>Level of Study:</b> <span id="detailLevel">Undergraduate</span></li>
+            <li><b>Duration:</b> <span id="detailDuration">4 years</span></li>
+            <li><b>Funding:</b> <span id="detailFunding">Full tuition</span></li>
+            <li><b>Eligibility:</b> <span id="detailEligibility">High academic achievement</span></li>
+          </ul>
+
+          <h2>How to Apply</h2>
+          <ol>
+            <li>Research available scholarships and their requirements.</li>
+            <li>Prepare necessary documents, including transcripts and recommendation letters.</li>
+            <li>Submit your application before the deadline.</li>
+            <li>Attend interviews or assessments if required.</li>
+          </ol>
+
+          <h2>Is it Competitive?</h2>
+          <p>Yes. A strong application with a compelling motivation letter and demonstrated leadership can make a difference.</p>
+        </div>
+
+        <aside class="side-images" aria-label="Related images">
+          <figure>
+            <img src="https://placehold.co/420x260/png?text=Scholarship+Photo+1" alt="Scholarship award ceremony">
+            <figcaption>Scholarship award ceremony</figcaption>
+          </figure>
+          <figure>
+            <img src="https://placehold.co/420x260/png?text=Scholarship+Photo+2" alt="Student studying">
+            <figcaption>Student studying with scholarship support</figcaption>
+          </figure>
+        </aside>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <div class="brand">
+        <a class="brand-logo" href="../index.html" aria-label="FORZA home">
+          <img src="../assets/logo.svg" alt="FORZA" />
         </a>
-
-        <nav class="nav-links" aria-label="Primary">
-          <a data-nav href="../index.html">Home</a>
-          <a data-nav href="./scholarships.html">Scholarships</a>
-          <a data-nav href="../index.html#features">Features</a>
-          <a data-nav href="./programmes.html">programmes</a>
-          <a data-nav href="../index.html#about">About forza</a>
-          <a data-nav href="../index.html#contact">Contact</a>
-          <a data-nav href="./volunteering.html">Volunteering</a>
-        </nav>
-
-        <div class="nav-actions">
-          <button class="icon-btn" type="button" aria-label="Account">
-            <img src="assets/icons/user.svg" alt="">
-          </button>
-        </div>
       </div>
+      <div class="copy">© 2025 Forza. All rights reserved.</div>
     </div>
-  </header>
+    <nav class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="./scholarships.html">Scholarships</a>
+      <a href="../index.html#features">Features</a>
+      <a href="./programmes.html">Programmes</a>
+      <a href="../index.html#about">About forza</a>
+      <a href="../index.html#contact">Contact</a>
+      <a href="./volunteering.html">Volunteering</a>
+    </nav>
+  </div>
+</footer>
 
-  <main class="section">
-    <div class="container">
-      <div class="article-hero">
-        <img id="detailHeroImg" src="https://placehold.co/1200x520/png?text=Header+Image" alt="Scholarship hero">
-      </div>
-
-      <article class="article" id="scholarshipDetails">
-        <h1 id="detailTitle">Scholarship: A Complete Guide</h1>
-
-        <h2>Introduction</h2>
-        <p id="detailIntro">Placeholder introduction text.</p>
-
-        <h2>Key Info</h2>
-        <div class="two-col">
-          <div>
-            <ul>
-              <li><b>Country:</b> <span id="detailCountry"></span></li>
-              <li><b>Level of Study:</b> <span id="detailLevel"></span></li>
-              <li><b>Duration:</b> <span id="detailDuration"></span></li>
-              <li><b>Funding:</b> <span id="detailFunding"></span></li>
-              <li><b>Eligibility:</b> <span id="detailEligibility"></span></li>
-              <li><b>Application:</b> <span id="detailApplication"></span></li>
-              <li><b>Deadline:</b> <span id="detailDeadline"></span></li>
-            </ul>
-
-            <h2>How to Apply</h2>
-            <ol>
-              <li>Prepare your documents (transcripts, passport, etc.).</li>
-              <li>Write your personal statement (placeholder).</li>
-              <li>Submit your application before the deadline.</li>
-              <li>Follow up for interviews/assessments if needed.</li>
-            </ol>
-
-            <h2>Is it Competitive?</h2>
-            <p>Yes. Use a strong motivation letter and show leadership, activities, and clear goals.</p>
-          </div>
-
-          <aside class="side-images" aria-label="Related images">
-            <figure>
-              <img src="https://placehold.co/420x260/png?text=Campus" alt="Campus">
-              <figcaption>UWC-USA (placeholder)</figcaption>
-            </figure>
-            <figure>
-              <img src="https://placehold.co/420x260/png?text=Library" alt="Library">
-              <figcaption>UWC South East Asia (placeholder)</figcaption>
-            </figure>
-            <figure>
-              <img src="https://placehold.co/420x260/png?text=Students" alt="Students">
-              <figcaption>Student community (placeholder)</figcaption>
-            </figure>
-          </aside>
-        </div>
-      </article>
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <a class="brand" href="../index.html">
-          <span class="logo-mark" aria-hidden="true"></span>
-          <span>FORZA</span>
-        </a>
-        <div class="footer-links">
-          <a data-nav href="../index.html">Home</a>
-          <a data-nav href="./scholarships.html">Scholarships</a>
-          <a data-nav href="../index.html#features">Features</a>
-          <a data-nav href="./programmes.html">programmes</a>
-          <a data-nav href="../index.html#about">About forza</a>
-          <a data-nav href="../index.html#contact">Contact</a>
-          <a data-nav href="./volunteering.html">Volunteering</a>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div>© 2025 Forza. All rights reserved.</div>
-        <div class="social" aria-label="Social links">
-          <a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt=""></a>
-          <a href="#" aria-label="Website"><img src="assets/icons/globe.svg" alt=""></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script type="module" src="js/main.js"></script>
+<script type="module" src="js/main.js"></script>
 </body>
 </html>
